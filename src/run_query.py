@@ -14,13 +14,17 @@ import argparse
 from typing import Dict, Any, Optional
 
 import openai
-from dotenv import load_dotenv
+from dotenv import load_dotenv, dotenv_values
 from safety import PromptSafetyChecker, SafetyLevel
 from assistant import CustomerSupportAssistant
 from metrics_logger import MetricsLogger
 
+
 # Load environment variables
-load_dotenv()
+for key in dotenv_values().keys():
+    os.environ.pop(key, None)
+
+load_dotenv(override=True)
 
 def main():
     """Command line interface for the assistant"""
