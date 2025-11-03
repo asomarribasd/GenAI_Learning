@@ -24,7 +24,7 @@ You must respond with valid JSON containing these exact fields:
 
 **Response**:
 ```json
-{
+{{
   "answer": "This appears to be a login authentication issue. Please try resetting your password using the 'Forgot Password' link. If the issue persists, your account may be temporarily locked for security reasons.",
   "confidence": 0.85,
   "actions": [
@@ -35,7 +35,7 @@ You must respond with valid JSON containing these exact fields:
   ],
   "category": "authentication",
   "urgency": "medium"
-}
+}}
 ```
 
 ### Example 2:
@@ -43,7 +43,7 @@ You must respond with valid JSON containing these exact fields:
 
 **Response**:
 ```json
-{
+{{
   "answer": "I understand your concern about the delayed order update. Let me help you track your shipment. Typically orders are processed within 1-2 business days and shipped within 3-5 days.",
   "confidence": 0.9,
   "actions": [
@@ -54,7 +54,7 @@ You must respond with valid JSON containing these exact fields:
   ],
   "category": "order_tracking",
   "urgency": "medium"
-}
+}}
 ```
 
 ### Example 3:
@@ -62,7 +62,7 @@ You must respond with valid JSON containing these exact fields:
 
 **Response**:
 ```json
-{
+{{
   "answer": "I apologize for the double charge - this requires immediate attention. We'll investigate this billing error right away and process a refund for the duplicate transaction.",
   "confidence": 0.95,
   "actions": [
@@ -74,7 +74,7 @@ You must respond with valid JSON containing these exact fields:
   ],
   "category": "billing",
   "urgency": "high"
-}
+}}
 ```
 
 ## Important Notes:
