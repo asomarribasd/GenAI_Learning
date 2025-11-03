@@ -12,12 +12,12 @@ class CustomerSupportAssistant:
     """Main class for processing customer support queries"""
     TOKEN_PRICING = {
         'gpt-5': {'input': 1.25, 'output': 10.00},
-        'gpt-5 nano': {'input': 0.05, 'output': 0.40},
+        'gpt-5-nano': {'input': 0.05, 'output': 0.40},
     }
 
     def __init__(self):
         self.client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-        self.model = os.getenv('DEFAULT_MODEL', 'gpt-5 nano')
+        self.model = os.getenv('DEFAULT_MODEL', 'gpt-5-nano')
         self.max_tokens = int(os.getenv('MAX_TOKENS', '1000'))
         self.temperature = float(os.getenv('TEMPERATURE', '0.7'))
         self.metrics_logger = MetricsLogger()
