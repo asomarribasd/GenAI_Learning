@@ -76,7 +76,7 @@ class TestCustomerSupportAssistant(unittest.TestCase):
         # Mock environment variables
         self.env_patcher = patch.dict(os.environ, {
             'OPENAI_API_KEY': 'test-key',
-            'DEFAULT_MODEL': 'gpt-5-nano',
+            'DEFAULT_MODEL': 'gpt-4-nano',
             'MAX_TOKENS': '1000',
             'TEMPERATURE': '0.7'
         })
