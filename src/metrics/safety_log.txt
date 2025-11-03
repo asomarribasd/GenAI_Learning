@@ -1,0 +1,12 @@
+2025-11-03 08:57:18,882 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 08:58:15,367 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:28:34,358 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:29:14,780 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:30:41,103 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:31:30,923 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:32:23,812 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:34:23,876 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:34:53,907 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:38:04,290 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:46:59,460 - INFO - Safety Assessment: {"input_preview": "I can't log into my account", "safety_level": "safe", "confidence": 0.3, "reasons": [], "blocked": false, "modified": false}
+2025-11-03 09:48:47,174 - INFO - Safety Assessment: {"input_preview": "Where is Costa Rica", "safety_level": "safe", "confidence": 0.1, "reasons": [], "blocked": false, "modified": false}

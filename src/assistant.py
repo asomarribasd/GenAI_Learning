@@ -12,13 +12,13 @@ class CustomerSupportAssistant:
     """Main class for processing customer support queries"""
     TOKEN_PRICING = {
         'gpt-5': {'input': 1.25, 'output': 10.00},
-        'gpt-4-nano': {'input': 0.05, 'output': 0.40},
+        'gpt-5-nano': {'input': 0.05, 'output': 0.40},
     }
 
     def __init__(self):
         self.client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-        self.model = os.getenv('DEFAULT_MODEL', 'gpt-4-nano')
-        self.max_tokens = int(os.getenv('MAX_TOKENS', '1000'))
+        self.model = os.getenv('DEFAULT_MODEL', 'gpt-5-nano')
+        self.max_completion_tokens = int(os.getenv('MAX_TOKENS', '1000'))
         self.temperature = float(os.getenv('TEMPERATURE', '0.7'))
         self.metrics_logger = MetricsLogger()
         self.prompt_template = self._load_prompt_template()
@@ -33,7 +33,7 @@ class CustomerSupportAssistant:
 
     def _estimate_cost(self, prompt_tokens: int, completion_tokens: int, model: str) -> float:
         if model not in self.TOKEN_PRICING:
-            pricing = self.TOKEN_PRICING['gpt-3.5-turbo']
+            pricing = self.TOKEN_PRICING[self.model]
         else:
             pricing = self.TOKEN_PRICING[model]
         input_cost = (prompt_tokens / 1000) * pricing['input']
@@ -99,7 +99,7 @@ class CustomerSupportAssistant:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=self.max_tokens,
+                max_completion_tokens=self.max_completion_tokens,
                 temperature=self.temperature
             )
             end_time = time.time()
